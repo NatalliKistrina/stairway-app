@@ -35,16 +35,15 @@ body {
   margin: 30px;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, .1);
   border-radius: 10px;
-  display: grid;
-  grid-template-columns: 30% 1fr;
-  grid-gap: 30px;
+  //display: grid;
+  //grid-template-columns: 30% 1fr;
+  //grid-gap: 30px;
 
   @media @mobile, @mobile-xs {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     margin: 10px;
     padding: 10px;
-
   }
 }
 
@@ -60,11 +59,11 @@ body {
   }
 }
 
-aside {
-  padding: 20px;
-  @media @mobile, @mobile-xs {
-    padding: 10px;
-  }
+//aside {
+//  padding: 20px;
+//  @media @mobile, @mobile-xs {
+//    padding: 10px;
+//  }
 
   .name {
     text-transform: uppercase;
@@ -131,17 +130,9 @@ aside {
 
     }
   }
-}
+//}
 
-.main-content {
-  padding: 20px;
-  border-left: 1px dashed @blue;
-  @media @mobile, @mobile-xs {
-    border-top: 1px solid @blue;
-    border-left: none;
-    padding: 10px;
-  }
-
+.wrapper-container {
   & > ul {
     padding-left: 20px;
 

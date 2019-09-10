@@ -27,9 +27,6 @@ body {
   margin: 30px;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  display: grid;
-  grid-template-columns: 30% 1fr;
-  grid-gap: 30px;
 }
 @media only screen and (max-width: 767px), only screen and (max-width: 480px) {
   .wrapper-container {
@@ -49,15 +46,7 @@ body {
   color: #33363e;
   font-weight: bold;
 }
-aside {
-  padding: 20px;
-}
-@media only screen and (max-width: 767px), only screen and (max-width: 480px) {
-  aside {
-    padding: 10px;
-  }
-}
-aside .name {
+.name {
   text-transform: uppercase;
   line-height: 30px;
   font-size: 30px;
@@ -65,16 +54,16 @@ aside .name {
   color: #33363e;
 }
 @media only screen and (max-width: 767px), only screen and (max-width: 480px) {
-  aside .name {
+  .name {
     text-align: center;
   }
 }
-aside .name strong {
+.name strong {
   color: #1cb8ff;
   font-size: inherit;
   display: block;
 }
-aside .photo {
+.photo {
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -86,28 +75,28 @@ aside .photo {
   margin-bottom: 50px;
 }
 @media only screen and (max-width: 767px), only screen and (max-width: 480px) {
-  aside .photo {
+  .photo {
     margin: 0 auto 50px;
   }
 }
-aside .contact {
+.contact {
   margin-bottom: 30px;
 }
-aside .contact svg {
+.contact svg {
   color: #1cb8ff;
   margin-right: 10px;
 }
-aside .contact li {
+.contact li {
   margin-bottom: 10px;
 }
-aside .contact li a {
+.contact li a {
   color: #33363e;
   font-size: 14px;
 }
-aside .rate-list {
+.rate-list {
   margin-bottom: 30px;
 }
-aside .rate-list li {
+.rate-list li {
   margin-bottom: 10px;
   font-size: 12px;
   text-transform: uppercase;
@@ -116,48 +105,37 @@ aside .rate-list li {
   align-items: center;
   justify-content: space-between;
 }
-.main-content {
-  padding: 20px;
-  border-left: 1px dashed #1cb8ff;
-}
-@media only screen and (max-width: 767px), only screen and (max-width: 480px) {
-  .main-content {
-    border-top: 1px solid #1cb8ff;
-    border-left: none;
-    padding: 10px;
-  }
-}
-.main-content > ul {
+.wrapper-container > ul {
   padding-left: 20px;
 }
-.main-content > ul .top {
+.wrapper-container > ul .top {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 5px;
 }
-.main-content > ul .top.justify-content-between {
+.wrapper-container > ul .top.justify-content-between {
   justify-content: space-between;
 }
-.main-content > ul small {
+.wrapper-container > ul small {
   color: #999;
   font-size: 12px;
   border-bottom: 1px solid #999;
 }
-.main-content > ul strong {
+.wrapper-container > ul strong {
   font-size: 12px;
   color: #999;
 }
-.main-content > ul .status {
+.wrapper-container > ul .status {
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.main-content > ul li {
+.wrapper-container > ul li {
   font-size: 14px;
   margin-bottom: 25px;
 }
-.main-content > ul li ul li {
+.wrapper-container > ul li ul li {
   color: #999;
   font-size: 12px;
   list-style: disc;

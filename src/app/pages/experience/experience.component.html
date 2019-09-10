@@ -1,0 +1,44 @@
+<div class="wrapper-container">
+  <div class="ttl black">Work experience</div>
+  <ul>
+    <li *ngFor="let item of work">
+      <div class="status">{{item.status}}</div>
+      <div class="top justify-content-between">
+        <strong>{{item.name}}</strong>
+        <small>{{item.date}}</small>
+      </div>
+      <ul>
+        <li *ngFor="let sub of item.skills">
+          {{sub}}
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="charts">
+    <canvas baseChart
+            [data]="pieChartDataWork"
+            [labels]="pieChartLabelsWork"
+            [chartType]="pieChartType"
+            [options]="pieChartOptions"
+            [colors]="pieChartColors"
+            [legend]="pieChartLegend">
+    </canvas>
+    <canvas baseChart
+            [data]="pieChartDataCreativity"
+            [labels]="pieChartLabelsCreativity"
+            [chartType]="pieChartType"
+            [options]="pieChartOptions"
+            [colors]="pieChartColorsRed"
+            [legend]="pieChartLegend">
+    </canvas>
+    <canvas baseChart
+            [data]="pieChartDataOrganization"
+            [labels]="pieChartLabelsOrganization"
+            [chartType]="pieChartType"
+            [options]="pieChartOptions"
+            [colors]="pieChartColorsBlue"
+            [legend]="pieChartLegend">
+    </canvas>
+  </div>
+</div>

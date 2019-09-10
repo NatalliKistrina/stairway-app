@@ -6,10 +6,13 @@ import {AppComponent} from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {ChartsModule} from "ng2-charts";
-import {HomeComponent} from "./home/home.component";
-import { CentralViewComponent } from './components/central-view/central-view.component';
-import { AsideComponent } from './components/aside/aside.component';
-import { ContentComponent } from './components/content/content.component';
+import {HomeComponent} from "./pages/home/home.component";
+import {CentralViewComponent} from './components/central-view/central-view.component';
+import {AsideComponent} from './components/aside/aside.component';
+import {ContentComponent} from './components/content/content.component';
+import {HeaderComponent} from './components/header/header.component';
+import {ExperienceComponent} from './pages/experience/experience.component';
+import {EducationComponent} from './pages/education/education.component';
 
 @NgModule({
     declarations: [
@@ -17,7 +20,10 @@ import { ContentComponent } from './components/content/content.component';
         HomeComponent,
         CentralViewComponent,
         AsideComponent,
-        ContentComponent
+        ContentComponent,
+        HeaderComponent,
+        ExperienceComponent,
+        EducationComponent
     ],
     imports: [
         BrowserModule,

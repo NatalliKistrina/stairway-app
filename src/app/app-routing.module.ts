@@ -1,13 +1,17 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {HomeComponent} from './home/home.component';
+import {HomeComponent} from './pages/home/home.component';
 import {CentralViewComponent} from "./components/central-view/central-view.component";
+import {EducationComponent} from "./pages/education/education.component";
+import {ExperienceComponent} from "./pages/experience/experience.component";
 
 const routes: Routes = [
     {
     path: '', component: CentralViewComponent,
     children: [
-        {path: '', component: HomeComponent}
+        {path: '', component: HomeComponent},
+        {path: 'education', component: EducationComponent},
+        {path: 'experience', component: ExperienceComponent}
     ]},
     {path: '', redirectTo: '/', pathMatch: 'full'},];
 

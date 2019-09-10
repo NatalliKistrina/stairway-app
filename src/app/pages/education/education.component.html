@@ -1,0 +1,11 @@
+<div class="wrapper-container">
+  <div class="ttl black">Education</div>
+  <ul>
+    <li *ngFor="let item of education">
+      <div class="top">
+        <small>{{item.date}}</small>
+      </div>
+      {{item.text}}
+    </li>
+  </ul>
+</div>

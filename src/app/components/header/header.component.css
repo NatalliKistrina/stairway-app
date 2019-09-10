@@ -1,0 +1,26 @@
+header {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #1cb8ff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  margin: 5px 15px;
+}
+header nav ul li a {
+  display: block;
+  text-transform: uppercase;
+  font-size: 11px;
+  text-decoration: none;
+}
+header nav ul li a.active,
+header nav ul li a:hover {
+  color: #33363e;
+  border-bottom: 1px solid #1cb8ff;
+}
+/*# sourceMappingURL=header.component.css.map */

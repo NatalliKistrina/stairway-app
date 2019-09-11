@@ -59,78 +59,73 @@ body {
   }
 }
 
-//aside {
-//  padding: 20px;
-//  @media @mobile, @mobile-xs {
-//    padding: 10px;
-//  }
 
-  .name {
+.name {
+  text-transform: uppercase;
+  line-height: 30px;
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: @text;
+
+  @media @mobile, @mobile-xs {
+    text-align: center;
+  }
+
+  strong {
+    color: @blue;
+    font-size: inherit;
+    display: block;
+  }
+}
+
+.photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  border: 1px solid @blue;
+  margin-bottom: 50px;
+  @media @mobile, @mobile-xs {
+    margin: 0 auto 50px;
+  }
+}
+
+.contact {
+  margin-bottom: 30px;
+
+  svg {
+    color: @blue;
+    margin-right: 10px;
+  }
+
+  li {
+    margin-bottom: 10px;
+
+    a {
+      color: @text;
+      font-size: 14px;
+    }
+  }
+}
+
+.rate-list {
+  margin-bottom: 30px;
+
+  li {
+    margin-bottom: 10px;
+    font-size: 12px;
     text-transform: uppercase;
-    line-height: 30px;
-    font-size: 30px;
-    margin-bottom: 25px;
-    color: @text;
+    color: @gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    @media @mobile, @mobile-xs {
-      text-align: center;
-    }
-
-    strong {
-      color: @blue;
-      font-size: inherit;
-      display: block;
-    }
   }
+}
 
-  .photo {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    border: 1px solid @blue;
-    margin-bottom: 50px;
-    @media @mobile, @mobile-xs {
-      margin: 0 auto 50px;
-    }
-  }
-
-  .contact {
-    margin-bottom: 30px;
-
-    svg {
-      color: @blue;
-      margin-right: 10px;
-    }
-
-    li {
-      margin-bottom: 10px;
-
-      a {
-        color: @text;
-        font-size: 14px;
-      }
-    }
-  }
-
-  .rate-list {
-    margin-bottom: 30px;
-
-    li {
-      margin-bottom: 10px;
-      font-size: 12px;
-      text-transform: uppercase;
-      color: @gray;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-    }
-  }
-//}
 
 .wrapper-container {
   & > ul {

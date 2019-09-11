@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {Lang} from "../../model/lang";
-import {Skills} from "../../model/skills";
-import {faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
+import {Lang} from '../../model/lang';
+import {Skills} from '../../model/skills';
+import {faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
     selector: 'app-home',

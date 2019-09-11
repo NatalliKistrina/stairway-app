@@ -5,11 +5,9 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
-import {ChartsModule} from "ng2-charts";
-import {HomeComponent} from "./pages/home/home.component";
+import {ChartsModule} from 'ng2-charts';
+import {HomeComponent} from './pages/home/home.component';
 import {CentralViewComponent} from './components/central-view/central-view.component';
-import {AsideComponent} from './components/aside/aside.component';
-import {ContentComponent} from './components/content/content.component';
 import {HeaderComponent} from './components/header/header.component';
 import {ExperienceComponent} from './pages/experience/experience.component';
 import {EducationComponent} from './pages/education/education.component';
@@ -19,8 +17,6 @@ import {EducationComponent} from './pages/education/education.component';
         AppComponent,
         HomeComponent,
         CentralViewComponent,
-        AsideComponent,
-        ContentComponent,
         HeaderComponent,
         ExperienceComponent,
         EducationComponent

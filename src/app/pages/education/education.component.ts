@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {Education} from "../../model/education";
+import {Component, OnInit} from '@angular/core';
+import {Education} from '../../model/education';
 
 @Component({
   selector: 'app-education',
@@ -8,6 +8,7 @@ import {Education} from "../../model/education";
 })
 export class EducationComponent implements OnInit {
   education: Education[];
+
   constructor() {
     this.education = [
       {date: 'In 2018', text: 'Finished the course FrontendPro in Hillel'},
